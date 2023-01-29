@@ -2,7 +2,7 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 
-public class AddQuestionGUI extends JFrame {
+public class    AddQuestionGUI extends JFrame {
     private JTextField questionField;
     private JComboBox questionTypeComboBox;
     private JButton addQuestionButton;

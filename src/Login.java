@@ -13,7 +13,7 @@ public class Login extends JFrame {
 
     private boolean register = false;
     private final static String driver = "org.mariadb.jdbc.Driver";
-    private final static String url = "jdbc:mariadb://localhost:3306/java_quizy_testbase";
+    private final static String url = "jdbc:mariadb://localhost:3306/java_quizy_example_database";
     private static Connection connection;
     private static Statement statement;
 

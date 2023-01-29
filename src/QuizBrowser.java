@@ -14,7 +14,7 @@ public class QuizBrowser extends JFrame {
     private JLabel label;
     private JButton goBackButton;
     private final static String driver = "org.mariadb.jdbc.Driver";
-    private final static String url = "jdbc:mariadb://localhost:3306/java_quizy_testbase";
+    private final static String url = "jdbc:mariadb://localhost:3306/java_quizy_example_database";
     private static Connection connection;
     private static Statement statement;
     private final BrowserMode currMode;
@@ -43,7 +43,7 @@ public class QuizBrowser extends JFrame {
 
             switch (browserMode) {
                 case BrowseQuiz -> {
-                    label.setText("Browse Quizes");
+                    label.setText("Browse Quizzes");
                     addQuizButton.setVisible(false);
                     deleteQuizButton.setVisible(false);
                     editQuizButton.setVisible(false);
@@ -59,7 +59,7 @@ public class QuizBrowser extends JFrame {
                     table1.setModel(tableModel);
                 }
                 case ManageQuiz->{
-                    label.setText("Manage your quizes");
+                    label.setText("Manage your quizzes");
                     ids.clear();
                     solveQuizButton.setVisible(false);
                     String sql ="SELECT name, id_quiz FROM quizes JOIN users USING(id_user) WHERE login = '"+Login.user.getLogin()+"';";
@@ -168,9 +168,9 @@ public class QuizBrowser extends JFrame {
                                 statement3.setBoolean(3,currQuestion.getAnswers()[j].isCorrect);
                                 statement3.execute();
                             }
-                            openMenu(Login.user);
 
                         }
+                        openMenu(Login.user);
                     }catch (SQLException sqlException){
                         JOptionPane.showMessageDialog(null,"Error has occured while trying to connect to database");
                     }
@@ -329,7 +329,7 @@ public class QuizBrowser extends JFrame {
         editQuizButton.addActionListener(e -> {
             switch (currMode){
                 case ManageQuiz -> {
-                    //editing existing quizes
+                    //editing existing quizzes
                     curQuizID = table1.getSelectedRow();
                     editQuiz();
                 }
