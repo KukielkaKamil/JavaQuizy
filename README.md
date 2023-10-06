@@ -11,16 +11,16 @@ This is a project to pass my academic course. It is an app created for use in lo
 
 ## Some screens of the app
 ### Login menu
-![Login](images/Login.png)\
+![Login](images/Login.png)
 ### Main menu (After successful sing in)
-![Menu](images/Menu.png)\
+![Menu](images/Menu.png)
 ### Example Questions
-![Question1](images/Question1.png)\
-![Question2](images/Question2.png)\
+![Question1](images/Question1.png)
+![Question2](images/Question2.png)
 ### Editor for specific question
-![Question_Editor](images/Question_Editor.png)\
+![Question_Editor](images/Question_Editor.png)
 ### Manager for questions in your Quizz
-![Question_Manager](images/Questions_Manager.png)\
+![Question_Manager](images/Questions_Manager.png)
 ### Quizz Browser
 ![Question_Browser](images/Quizz_Browser.png)
 
